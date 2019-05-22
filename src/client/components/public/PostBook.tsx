@@ -96,7 +96,7 @@ class PostBook extends React.Component<IPostBookProps, IPostBookState> {
                         onChange={(e: React.ChangeEvent<HTMLInputElement>) => this.setState({ price: e.target.valueAsNumber })}
                         className="form-control d-block">
                     </input>
-                    <label>Category: (Note: You must select a choice from this field.)</label>
+                    <label>Category: (Note: Choose A Category.)</label>
                     <select
                         value={this.state.selectCategoryId}
                         onChange={(e: React.ChangeEvent<HTMLSelectElement>) => this.setState({ selectCategoryId: e.target.value })}

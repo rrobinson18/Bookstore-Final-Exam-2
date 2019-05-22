@@ -14,7 +14,7 @@ class Login extends React.Component<ILoginProps, ILoginState> {
 
     componentDidMount() {
         if(User && User.role === 'admin') {
-            this.props.history.replace('/books');
+            this.props.history.replace('/login');
         }
     }
 
@@ -30,7 +30,7 @@ class Login extends React.Component<ILoginProps, ILoginState> {
             if(result) {
                 SetAccessToken(result.token, { userid: result.userid, role: result.role });
                 if (result.role === 'admin') {
-                    this.props.history.push('/books');
+                    this.props.history.push('/new');
                 } else {
                     this.props.history.push('/');
                 }
