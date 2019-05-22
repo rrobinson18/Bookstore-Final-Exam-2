@@ -6,12 +6,12 @@ class UpdateBook extends React.Component<IUpdateBookProps, IUpdateBookState> {
     constructor(props: IUpdateBookProps) {
         super(props);
         this.state = {
-           title: null,
-           author: null,
+           title: '',
+           author: '',
            price: null,
            categoryid: null,
            categories: [],
-           selectedCategoryId: null 
+           selectedCategoryId: '' 
         };
 
         this.handleEdit = this.handleEdit.bind(this);

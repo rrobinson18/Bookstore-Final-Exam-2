@@ -26,7 +26,7 @@ const App: React.SFC<AppProps> = () => {
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/register" component={Register} />
                 <Route exact path="/new" component={PostBook} />
-                <Route exact path="books/:id/update" component={UpdateBook} />
+                <Route exact path="/books/:id/update" component={UpdateBook} />
             </Switch>
         </main>
        </BrowserRouter>

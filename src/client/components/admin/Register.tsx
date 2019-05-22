@@ -18,7 +18,7 @@ class Register extends React.Component<IRegisterProps, IRegisterState> {
 
     componentDidMount() {
         if(User && User.role === 'admin') {
-            this.props.history.replace('/books');
+            this.props.history.replace('/register');
         }
     }
 
