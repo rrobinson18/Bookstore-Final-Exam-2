@@ -10,10 +10,10 @@ class ViewBook extends React.Component<IViewBookProps, IViewBookState> {
         this.state = {
             book: {
                 id: null,
-                title: null,
-                author: null,
+                title: '',
+                author: '',
                 price: null,
-                name: null
+                name: ''
             }
         }
 

@@ -6,12 +6,12 @@ class PostBook extends React.Component<IPostBookProps, IPostBookState> {
     constructor(props: IPostBookProps) {
         super(props);
         this.state = {
-            title: null,
-            author: null,
+            title: '',
+            author: '',
             price: null,
             categoryid: null,
             categories: [],
-            selectCategoryId: null
+            selectCategoryId: ''
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
