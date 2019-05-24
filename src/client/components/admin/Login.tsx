@@ -14,7 +14,7 @@ class Login extends React.Component<ILoginProps, ILoginState> {
 
     componentDidMount() {
         if(User && User.role === 'admin') {
-            this.props.history.replace('/login');
+            this.props.history.replace('/');
         }
     }
 
