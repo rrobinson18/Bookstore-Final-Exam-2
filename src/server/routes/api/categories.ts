@@ -14,4 +14,15 @@ router.get('/', async (req, res, next) => {
     }
 });
 
+router.get('/:id?', async (req, res, next) => {
+    try {
+        let id = req.params.id;
+        let [category] = await db.categories.getOneCatorgories(id);
+        res.json(category);
+    } catch(e) {
+        console.log(e);
+        res.sendStatus(500);
+    }
+});
+
 export default router;
